@@ -1,0 +1,815 @@
+<!doctype html>
+<html lang="zxx">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- color of address bar in mobile browser -->
+  <meta name="theme-color" content="#2B2B35">
+  <!-- favicon  -->
+  <link rel="shortcut icon" href="img/播放器.ico" type="image/x-icon">
+  <!-- bootstrap css -->
+  <link rel="stylesheet" href="css/plugins/bootstrap.min.css">
+  <!-- font awesome css -->
+  <link rel="stylesheet" href="css/plugins/font-awesome.min.css">
+  <!-- swiper css -->
+  <link rel="stylesheet" href="css/plugins/swiper.min.css">
+  <!-- fancybox css -->
+  <link rel="stylesheet" href="css/plugins/fancybox.min.css">
+  <!-- main css -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <title>project_videoPlayer</title>
+</head>
+
+<body>
+
+  <!-- app -->
+  <div class="art-app">
+
+    <!-- mobile top bar -->
+    <div class="art-mobile-top-bar"></div>
+
+    <!-- app wrapper -->
+    <div class="art-app-wrapper">
+
+      <!-- app container end -->
+      <div class="art-app-container">
+
+        <!-- info bar -->
+        <div class="art-info-bar">
+
+          <!-- menu bar frame -->
+          <div class="art-info-bar-frame">
+
+            <!-- info bar header -->
+            <div class="art-info-bar-header">
+              <!-- info bar button -->
+              <a class="art-info-bar-btn" href="#.">
+                <!-- icon -->
+                <i class="fas fa-ellipsis-v"></i>
+              </a>
+              <!-- info bar button end -->
+            </div>
+            <!-- info bar header end -->
+
+            <!-- info bar header -->
+            <div class="art-header">
+              <!-- avatar -->
+              <div class="art-avatar">
+                <a data-fancybox="avatar" href="img/证件照.jpg" class="art-avatar-curtain">
+                  <img src="img/证件照.jpg" alt="avatar">
+                  <i class="fas fa-expand"></i>
+                </a>
+                <!-- available -->
+                <div class="art-lamp-light">
+                  <!-- add class 'art-not-available' if not available-->
+                  <div class="art-available-lamp"></div>
+                </div>
+              </div>
+              <!-- avatar end -->
+              <!-- name -->
+              <h5 class="art-name mb-10"><a href="index.html">杨彬</a></h5>
+              <!-- post -->
+              <div class="art-sm-text">C++开发<br>机器人爱好者</div>
+            </div>
+            <!-- info bar header end -->
+
+            <!-- scroll frame -->
+            <div id="scrollbar2" class="art-scroll-frame">
+
+              <!-- info bar about -->
+              <div class="art-table p-15-15">
+                <!-- about text -->
+                <ul>
+                  <!-- age -->
+                  <li>
+                    <h6>年龄:</h6><span>27</span>
+                  </li>
+                  <!-- country -->
+                  <li>
+                    <h6>家乡:</h6><span>河北·保定</span>
+                  </li>
+                  <!-- telephone -->
+                  <li>
+                    <h6>电话:</h6><span>18331277991</span>
+                  </li>
+                  <!-- e-mail -->
+                  <li>
+                    <h6>邮箱:</h6><span>1379566624@qq.com</span>
+                  </li>
+                </ul>
+              </div>
+              <!-- info bar about end -->
+
+              <!-- divider -->
+              <div class="art-ls-divider"></div>
+
+			  <!-- education -->
+              <div class="art-table p-15-15">
+                <!-- about text -->
+                <ul>
+                  <!-- 本科 -->
+                  <li>
+                    <h6>本科:</h6><span>东北大学</span><span>机器人工程专业</span>
+                  </li>
+                  <!-- 硕士 -->
+                  <li>
+                    <h6>硕士:</h6><span>南开大学</span><span>控制科学与工程</span>
+                  </li>
+                </ul>
+              </div>
+              <!-- education end -->
+
+              <!-- divider -->
+              <div class="art-ls-divider"></div>
+
+              <!-- language skills -->
+              <div class="art-lang-skills p-30-15">
+
+                <!-- skill -->
+                <div class="art-lang-skills-item">
+                  <div id="circleprog1" class="art-cirkle-progress"></div>
+                  <!-- title -->
+                  <h6>C++</h6>
+                </div>
+                <!-- skill end -->
+
+                <!-- skill -->
+                <div class="art-lang-skills-item">
+                  <div id="circleprog2" class="art-cirkle-progress"></div>
+                  <!-- title -->
+                  <h6>Python</h6>
+                </div>
+                <!-- skill end -->
+
+                <!-- skill -->
+                <div class="art-lang-skills-item">
+                  <div id="circleprog3" class="art-cirkle-progress"></div>
+                  <!-- title -->
+                  <h6>Java</h6>
+                </div>
+                <!-- skill end -->
+
+              </div>
+              <!-- language skills end -->
+
+              <!-- divider -->
+              <div class="art-ls-divider"></div>
+
+              <!-- hard skills -->
+              <div class="art-hard-skills p-30-15">
+
+                <!-- skill -->
+                <div class="art-hard-skills-item">
+                  <div class="art-skill-heading">
+                    <!-- title -->
+                    <h6>Linux</h6>
+                  </div>
+                  <!-- progressbar frame -->
+                  <div class="art-line-progress">
+                    <!-- progressbar -->
+                    <div id="lineprog1"></div>
+                  </div>
+                  <!-- progressbar frame end -->
+                </div>
+                <!-- skill end -->
+
+                <!-- skill -->
+                <div class="art-hard-skills-item">
+                  <div class="art-skill-heading">
+                    <!-- title -->
+                    <h6>Qt</h6>
+                  </div>
+                  <!-- progressbar frame -->
+                  <div class="art-line-progress">
+                    <!-- progressbar -->
+                    <div id="lineprog2"></div>
+                  </div>
+                  <!-- progressbar frame end -->
+                </div>
+                <!-- skill end -->
+
+                <!-- skill -->
+                <div class="art-hard-skills-item">
+                  <div class="art-skill-heading">
+                    <!-- title -->
+                    <h6>html、CSS、Js</h6>
+                  </div>
+                  <!-- progressbar frame -->
+                  <div class="art-line-progress">
+                    <!-- progressbar -->
+                    <div id="lineprog3"></div>
+                  </div>
+                  <!-- progressbar frame end -->
+                </div>
+                <!-- skill end -->
+
+                <!-- skill -->
+                <div class="art-hard-skills-item">
+                  <div class="art-skill-heading">
+                    <!-- title -->
+                    <h6>Matlab</h6>
+                  </div>
+                  <!-- progressbar frame -->
+                  <div class="art-line-progress">
+                    <!-- progressbar -->
+                    <div id="lineprog4"></div>
+                  </div>
+                  <!-- progressbar frame end -->
+                </div>
+                <!-- skill end -->
+
+                <!-- skill -->
+                <div class="art-hard-skills-item">
+                  <div class="art-skill-heading">
+                    <!-- title -->
+                    <h6>Git</h6>
+                  </div>
+                  <!-- progressbar frame -->
+                  <div class="art-line-progress">
+                    <!-- progressbar -->
+                    <div id="lineprog5"></div>
+                  </div>
+                  <!-- progressbar frame end -->
+                </div>
+                <!-- skill end -->
+
+              </div>
+              <!-- language skills end -->
+
+              <!-- divider -->
+              <div class="art-ls-divider"></div>
+
+              <!-- knowledge list -->
+              <ul class="art-knowledge-list p-15-0">
+                <!-- list item -->
+                <li>数据结构与算法</li>
+                <!-- list item -->
+                <li>Taichi、音视频</li>
+                <!-- list item -->
+                <li>多线程、网络编程</li>
+                <!-- list item -->
+                <li>机器人运动学、动力学</li>
+              </ul>
+              <!-- knowledge list end -->
+
+              <!-- divider -->
+              <div class="art-ls-divider"></div>
+
+              <!-- links frame -->
+              <div class="art-links-frame p-15-15">
+
+                <!-- download cv button -->
+                <a href="files/cv.txt" class="art-link" download>下载 个人简历<i class="fas fa-download"></i></a>
+
+              </div>
+              <!-- links frame end -->
+
+            </div>
+            <!-- scroll frame end -->
+
+            <!-- sidebar social -->
+            <div class="art-ls-social">
+              <!-- social link -->
+              <a href="#." target="_blank"><i class="far fa-circle"></i></a>
+              <!-- social link -->
+              <a href="#." target="_blank"><i class="far fa-circle"></i></a>
+              <!-- social link -->
+              <a href="#." target="_blank"><i class="far fa-circle"></i></a>
+              <!-- social link -->
+              <a href="#." target="_blank"><i class="far fa-circle"></i></a>
+              <!-- social link -->
+              <a href="#." target="_blank"><i class="far fa-circle"></i></a>
+            </div>
+            <!-- sidebar social end -->
+
+          </div>
+          <!-- menu bar frame end -->
+
+        </div>
+        <!-- info bar end -->
+
+        <!-- content -->
+        <div class="art-content">
+
+          <!-- curtain -->
+          <div class="art-curtain"></div>
+
+          <!-- top background -->
+          <div class="art-top-bg" style="background-image: url(img/bg.jpg)">
+            <!-- overlay -->
+            <div class="art-top-bg-overlay"></div>
+            <!-- overlay end -->
+          </div>
+          <!-- top background end -->
+
+
+          <!-- swup container -->
+          <div class="transition-fade" id="swup">
+
+            <!-- scroll frame -->
+            <div id="scrollbar" class="art-scroll-frame">
+
+              <!-- container -->
+              <div class="container-fluid">
+
+                <!-- row -->
+                <div class="row p-30-0">
+
+                  <!-- col -->
+                  <div class="col-lg-12">
+
+                    <!-- section title -->
+                    <div class="art-section-title">
+                      <!-- title frame -->
+                      <div class="art-title-frame">
+                        <!-- title -->
+                        <h4>简易视频播放器</h4>
+                      </div>
+                      <!-- title frame end -->
+                      <!-- right frame -->
+                      <div class="art-right-frame">
+                        <div class="art-project-category">C++，Qt，音视频开发</div>
+                      </div>
+                      <!-- right frame end -->
+                    </div>
+                    <!-- section title end -->
+
+                  </div>
+                  <!-- col end -->
+
+                  <!-- col -->
+                  <div class="col-lg-12">
+
+                    <!-- project cover -->
+                    <div class="art-a art-project-cover">
+                      <!-- item frame -->
+                      <a data-fancybox="gallery" href="img/project/simpleVideoPlayer/主界面.JPG" class="art-portfolio-item-frame art-horizontal">
+                        <!-- img -->
+                        <img src="img/project/simpleVideoPlayer/主界面_bg.JPG" alt="item">
+                        <!-- zoom icon -->
+                        <span class="art-item-hover"><i class="fas fa-expand"></i></span>
+                      </a>
+                      <!-- item end -->
+                    </div>
+                    <!-- project cover nd -->
+
+                  </div>
+                  <!-- col end -->
+
+                  <!-- col -->
+                  <div class="col-lg-8">
+
+                    <!-- post text -->
+                    <div class="art-a art-card">
+                      <p class="art-lg-text art-white"><i>基于Qt5.9.8和ffmpeg4.2.2用C++开发的简易视频播放器。</i>
+                      </p>
+
+                      <p>基于ffmpeg对视频数据进行解码，音频流和视频流开不同的线程进行解码。可以拖动进度条定位视频播放进度。可以实现音量调整。</p>
+                      <ul class="art-custom-list">
+                        <li>换肤</li>
+                        <li>加载字幕</li>
+                        <li>中英文切换</li>
+                        <li>拖拽播放进度条</li>
+                      </ul>
+                      <p>基于Qt Meta-Object Languageqml(qml)绘制用户界面，与C++进行交换。</p>
+
+                      <blockquote>没有工具创造工具，手搓一个视频播放器。</blockquote>
+
+                      <p>ffmpeg API的使用：libavformat用于封装格式的读取和写入，包括解析容器格式（如MP4、AVI）并提供音视频流的信息；libavcodec为编解码库，提供了音视频编解码器的功能，
+					  支持多种编解码格式（如H.264、AAC）；libavfilter用于音视频过滤处理器的处理，包括滤镜、裁剪、调整大小等操作，可以实现各种音视频滤镜效果；libavdevice用于音视频设备的捕获与播放。</p>
+
+                      <p>以后可以慢慢扩展，长期维护。 </p>
+                    </div>
+                    <!-- post text end -->
+
+                  </div>
+                  <!-- col end -->
+
+                  <!-- col -->
+                  <div class="col-lg-4">
+
+                    <div class="art-a art-card">
+                      <!-- table -->
+                      <div class="art-table p-15-15">
+                        <ul>
+                          <li>
+                            <h6>时间:</h6><span>2024/08/21</span>
+                          </li>
+                          <li>
+                            <h6>作者:</h6><span>杨彬</span>
+                          </li>
+                          <li>
+                            <h6>类别:</h6><span>软件开发</span>
+                          </li>
+                        </ul>
+                      </div>
+                      <!-- table end -->
+                    </div>
+
+                  </div>
+                  <!-- col end -->
+
+                </div>
+                <!-- row end -->
+
+              </div>
+              <!-- container end -->
+
+              <!-- container -->
+              <div class="container-fluid">
+
+                <!-- row -->
+                <div class="row">
+
+                  <!-- col -->
+                  <div class="col-lg-12">
+
+                    <!-- pagination -->
+                    <div class="art-a art-pagination">
+                      <!-- button -->
+                      <a href="project_webServer.html" class="art-link art-color-link art-w-chevron art-left-link"><span>上一个项目</span></a>
+                      <div class="art-pagination-center art-m-hidden">
+                        <a class="art-link" href="project_2col.html">所有项目</a>
+                      </div>
+                      <!-- button -->
+                      <a href="project_cloudDisk.html" class="art-link art-color-link art-w-chevron"><span>下一个项目</span></a>
+                    </div>
+                    <!-- pagination end -->
+
+                  </div>
+                  <!-- col end -->
+
+                </div>
+                <!-- row end -->
+
+              </div>
+              <!-- container end -->
+
+              <!-- container -->
+              <div class="container-fluid">
+
+                <!-- row -->
+                <div class="row p-30-0">
+
+                  <!-- col -->
+                  <div class="col-lg-12">
+
+                    <!-- section title -->
+                    <div class="art-section-title">
+                      <!-- title frame -->
+                      <div class="art-title-frame">
+                        <!-- title -->
+                        <h4>运行效果展示</h4>
+                      </div>
+                      <!-- title frame end -->
+                    </div>
+                    <!-- section title end -->
+
+                  </div>
+                  <!-- col end -->
+
+                  <!-- col -->
+                  <div class="col-lg-12">
+
+                    <!-- slider container -->
+                    <div class="swiper-container art-blog-slider" style="overflow: visible">
+                      <!-- slider wrapper -->
+                      <div class="swiper-wrapper">
+                        <!-- slide -->
+                        <div class="swiper-slide">
+
+                          <!-- blog post card -->
+                          <div class="art-a art-blog-card">
+                            <!-- post cover -->
+                            <a class="art-port-cover">
+                              <!-- img -->
+                              <img src="img/project/simpleVideoPlayer/选择视频.JPG" alt="blog post">
+                            </a>
+                            <!-- post cover end -->
+                            <!-- post description -->
+                            <div class="art-post-description">
+                              <!-- title -->
+                              <h5 class="mb-15">播放视频</h5>
+                              <!-- text -->
+                              <div class="mb-15">加载本地视频，暂不支持加载线上视频，后续可以尝试。</div>
+                            </div>
+                            <!-- post description end -->
+                          </div>
+                          <!-- blog post card end -->
+
+                        </div>
+                        <!-- slide end -->
+                        <!-- slide -->
+                        <div class="swiper-slide">
+
+                          <!-- blog post card -->
+                          <div class="art-a art-blog-card">
+                            <!-- post cover -->
+                            <a class="art-port-cover">
+                              <!-- img -->
+                              <img src="img/project/simpleVideoPlayer/选择语言.JPG" alt="blog post">
+                            </a>
+                            <!-- post cover end -->
+                            <!-- post description -->
+                            <div class="art-post-description">
+                              <!-- title -->
+                                <h5 class="mb-15">中英文切换</h5>
+                              <!-- text -->
+                              <div class="mb-15">国际化，可以切换界面语言为中文或英文。（还可加入其他语言）</div>
+                            </div>
+                            <!-- post description end -->
+                          </div>
+                          <!-- blog post card end -->
+
+                        </div>
+                        <!-- slide end -->
+                        <!-- slide -->
+                        <div class="swiper-slide">
+
+                          <!-- blog post card -->
+                          <div class="art-a art-blog-card">
+                            <!-- post cover -->
+                            <a class="art-port-cover">
+                              <!-- img -->
+                              <img src="img/project/simpleVideoPlayer/选择字幕.JPG" alt="blog post">
+                            </a>
+                            <!-- post cover end -->
+                            <!-- post description -->
+                            <div class="art-post-description">
+                              <!-- title -->
+								<h5 class="mb-15">加载字幕</h5>
+                              <!-- text -->
+                              <div class="mb-15">可以加载本地字幕。字幕与视频的同步使用定时器完成。</div>
+                            </div>
+                            <!-- post description end -->
+                          </div>
+                          <!-- blog post card end -->
+
+                        </div>
+                        <!-- slide end -->
+                        <!-- slide -->
+                        <div class="swiper-slide">
+
+                          <!-- blog post card -->
+                          <div class="art-a art-blog-card">
+                            <!-- post cover -->
+                            <a class="art-port-cover">
+                              <!-- img -->
+                              <img src="img/project/simpleVideoPlayer/换肤.JPG" alt="blog post">
+                            </a>
+                            <!-- post cover end -->
+                            <!-- post description -->
+                            <div class="art-post-description">
+                              <!-- title -->
+								<h5 class="mb-15">切换皮肤</h5>
+                              <!-- text -->
+                              <div class="mb-15">可以更换视频播放器的背景图片，每次修改时保存至本地。</div>
+                            </div>
+                            <!-- post description end -->
+                          </div>
+                          <!-- blog post card end -->
+
+                        </div>
+                        <!-- slide end -->
+                      </div>
+                      <!-- slider wrapper end -->
+                    </div>
+                    <!-- slider container end -->
+
+                  </div>
+                  <!-- col end -->
+
+                  <!-- col -->
+                  <div class="col-lg-12">
+
+                    <!-- slider navigation -->
+                    <div class="art-slider-navigation">
+
+                      <!-- left side -->
+                      <div class="art-sn-left">
+
+                        <!-- slider pagination -->
+                        <div class="swiper-pagination"></div>
+
+                      </div>
+                      <!-- left side end -->
+
+                      <!-- right side -->
+                      <div class="art-sn-right">
+
+                        <!-- slider navigation -->
+                        <div class="art-slider-nav-frame">
+                          <!-- prev -->
+                          <div class="art-slider-nav art-blog-swiper-prev"><i class="fas fa-chevron-left"></i></div>
+                          <!-- next -->
+                          <div class="art-slider-nav art-blog-swiper-next"><i class="fas fa-chevron-right"></i></div>
+                        </div>
+                        <!-- slider navigation -->
+
+                      </div>
+                      <!-- right side end -->
+
+                    </div>
+                    <!-- slider navigation end -->
+
+                  </div>
+                  <!-- col end -->
+
+                </div>
+                <!-- row end -->
+
+              </div>
+              <!-- container end -->
+
+              <!-- container -->
+              <div class="container-fluid">
+
+                <!-- row -->
+                <div class="row">
+
+                  <!-- col -->
+                  <div class="col-6 col-lg-3">
+                    <!-- brand -->
+                    <img class="art-brand" src="img/brands/C++.jpeg" alt="brand">
+                  </div>
+                  <!-- col end -->
+
+                  <!-- col -->
+                  <div class="col-6 col-lg-3">
+                    <!-- brand -->
+                    <img class="art-brand" src="img/brands/Python.png" alt="brand">
+                  </div>
+                  <!-- col end -->
+
+                  <!-- col -->
+                  <div class="col-6 col-lg-3">
+                    <!-- brand -->
+                    <img class="art-brand" src="img/brands/Java.png" alt="brand">
+                  </div>
+                  <!-- col end -->
+
+                  <!-- col -->
+                  <div class="col-6 col-lg-3">
+                    <!-- brand -->
+                    <img class="art-brand" src="img/brands/MySQL.png" alt="brand">
+                  </div>
+                  <!-- col end -->
+
+                </div>
+                <!-- row end -->
+
+              </div>
+              <!-- container end -->
+
+              <!-- container -->
+              <div class="container-fluid">
+
+                <!-- footer -->
+                <footer>
+                  <!-- copyright -->
+                  <div class="art-copy">© 2024 杨彬 1379566624@qq.com</div>
+                </footer>
+                <!-- footer end -->
+
+              </div>
+              <!-- container end -->
+
+
+            </div>
+            <!-- scroll frame end -->
+
+          </div>
+          <!-- swup container end -->
+
+        </div>
+        <!-- content end -->
+
+        <!-- menu bar -->
+        <div class="art-menu-bar">
+
+          <!-- menu bar frame -->
+          <div class="art-menu-bar-frame">
+
+            <!-- menu bar header -->
+            <div class="art-menu-bar-header">
+              <!-- menu bar button -->
+              <a class="art-menu-bar-btn" href="#.">
+                <!-- icon -->
+                <span></span>
+              </a>
+              <!-- menu bar button end -->
+            </div>
+            <!-- menu bar header end -->
+
+            <!-- current page title -->
+            <div class="art-current-page"></div>
+            <!-- current page title end -->
+
+            <!-- scroll frame -->
+            <div class="art-scroll-frame">
+
+              <!-- menu -->
+              <nav id="swupMenu">
+                <!-- menu list -->
+                <ul class="main-menu">
+                  <!-- menu item -->
+                  <li class="menu-item"><a href="index.html">首页</a></li>
+                  <!-- menu item -->
+                  <li class="menu-item menu-item-has-children current-menu-item">
+                    <a href="#.">项目</a>
+                    <!-- sub menu -->
+                    <ul class="sub-menu">
+					  <!-- lvl 2 nav link -->
+                      <li class="menu-item"><a href="project_webServer.html">Linux端web服务器</a></li>
+                      <!-- lvl 2 nav link -->
+                      <li class="menu-item"><a href="project_videoPlayer.html">跨平台视频播放器</a></li>
+					  <!-- lvl 2 nav link -->
+                      <li class="menu-item"><a href="project_cloudDisk.html">网盘项目</a></li>
+					  <!-- lvl 2 nav link -->
+                      <li class="menu-item"><a href="project_taichiSimulation.html">Taichi物理仿真</a></li>
+                      <!-- lvl 2 nav link -->
+                      <li class="menu-item"><a href="project_2col.html">汇总</a></li>
+                    </ul>
+                    <!-- sub menu end -->
+                  </li>
+                  <!-- menu item -->
+                  <li class="menu-item"><a href="history.html">履历</a></li>
+                  <!-- menu item -->
+                  <li class="menu-item"><a href="contact.html">联系</a></li>
+                  <!-- menu item -->
+                  <li class="menu-item"><a href="onepage.html" target="_blank">单页</a></li>
+                </ul>
+                <!-- menu list end -->
+              </nav>
+              <!-- menu end -->
+
+              <!-- language change -->
+              <ul class="art-language-change">
+                <!-- language item -->
+                <li><a href="#.">英文</a></li>
+                <!-- language item -->
+                <li class="art-active-lang"><a href="#.">中文</a></li>
+              </ul>
+              <!-- language change end -->
+
+            </div>
+            <!-- scroll frame end -->
+
+          </div>
+          <!-- menu bar frame -->
+
+        </div>
+        <!-- menu bar end -->
+
+      </div>
+      <!-- app container end -->
+
+    </div>
+    <!-- app wrapper end -->
+
+    <!-- preloader -->
+    <div class="art-preloader">
+      <!-- preloader content -->
+      <div class="art-preloader-content">
+        <!-- title -->
+        <h4>loading...</h4>
+        <!-- progressbar -->
+        <div id="preloader" class="art-preloader-load"></div>
+      </div>
+      <!-- preloader content end -->
+    </div>
+    <!-- preloader end -->
+
+  </div>
+  <!-- app end -->
+
+  <!-- jquery js -->
+  <script src="js/plugins/jquery.min.js"></script>
+  <!-- anime js -->
+  <script src="js/plugins/anime.min.js"></script>
+  <!-- swiper js -->
+  <script src="js/plugins/swiper.min.js"></script>
+  <!-- progressbar js -->
+  <script src="js/plugins/progressbar.min.js"></script>
+  <!-- smooth scrollbar js -->
+  <script src="js/plugins/smooth-scrollbar.min.js"></script>
+  <!-- overscroll js -->
+  <script src="js/plugins/overscroll.min.js"></script>
+  <!-- typing js -->
+  <script src="js/plugins/typing.min.js"></script>
+  <!-- isotope js -->
+  <script src="js/plugins/isotope.min.js"></script>
+  <!-- fancybox js -->
+  <script src="js/plugins/fancybox.min.js"></script>
+  <!-- swup js -->
+  <script src="js/plugins/swup.min.js"></script>
+
+  <!-- main js -->
+  <script src="js/main.js"></script>
+
+</body>
+
+</html>

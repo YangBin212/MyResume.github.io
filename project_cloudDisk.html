@@ -326,12 +326,12 @@
                       <!-- title frame -->
                       <div class="art-title-frame">
                         <!-- title -->
-                        <h4>小型Linux端web服务器开发</h4>
+                        <h4>C/S架构网盘&聊天室</h4>
                       </div>
                       <!-- title frame end -->
                       <!-- right frame -->
                       <div class="art-right-frame">
-                        <div class="art-project-category">web服务器开发，Linux，C++</div>
+                        <div class="art-project-category">网络编程，Qt，C++</div>
                       </div>
                       <!-- right frame end -->
                     </div>
@@ -346,9 +346,9 @@
                     <!-- project cover -->
                     <div class="art-a art-project-cover">
                       <!-- item frame -->
-                      <a data-fancybox="gallery" href="img/project/tinyWebServer/打开服务器.gif" class="art-portfolio-item-frame art-horizontal">
+                      <a data-fancybox="gallery" href="img/project/cloudDisk/login.gif" class="art-portfolio-item-frame art-horizontal">
                         <!-- img -->
-                        <img src="img/project/tinyWebServer/打开服务器.gif" alt="item">
+                        <img src="img/project/cloudDisk/login.gif" alt="item">
                         <!-- zoom icon -->
                         <span class="art-item-hover"><i class="fas fa-expand"></i></span>
                       </a>
@@ -382,18 +382,18 @@
                     <div class="art-a art-card art-fluid-card">
                       <h5 class="mb-15">项目描述</h5>
                       <div class="mb-15">
-					  Linux下C++轻量级Web服务器
+					  C/S架构搭建聊天室&网盘
 					    <ul class="art-custom-list">
-							<li>使用 线程池 + 非阻塞socket + epoll(ET和LT均实现) + 事件处理(Reactor和模拟Proactor均实现) 的并发模型</li>
-							<li>使用状态机解析HTTP请求报文，支持解析GET和POST请求</li>
-							<li>访问服务器数据库实现web端用户注册、登录功能，可以请求服务器图片和视频文件</li>
-							<li>实现同步/异步日志系统，记录服务器运行状态</li>
-							<li>经Webbench压力测试可以实现上万的并发连接数据交换</li>
+							<li>使用弹性结构体实现Client和Server之间通信</li>
+							<li>派生QTcpSocket和QTcpServer，将不同的QTcpSocket存储在一个QList中以区分不同的Client的连接</li>
+							<li>用户信息和好友信息存储在Server，数据库管理系统使用SQLite3</li>
+							<li>加好友操作、分享文件等操作采用数据转发策略</li>
+							<li>UI设计基于QWidget和ui相结合</li>
 						</ul>
-					  参考书籍：《Linux高性能服务器编程》
+					  软件库版本：Qt version 5.9.8; SQLite version 3.35.4
 					  </div>
                       <!-- button -->
-                      <div class="art-buttons-frame"><a href="https://www.behance.net/gallery/83236527/VIE" class="art-link art-color-link art-w-chevron" target="_blank">更多细节</a></div>
+                      <div class="art-buttons-frame"><a href="https://gitee.com/yang-bin-0320/cloud-disk" class="art-link art-color-link art-w-chevron" target="_blank">更多细节</a></div>
                     </div>
 
                   </div>
@@ -464,9 +464,9 @@
                     <!-- grid item -->
                     <div class="art-grid-item webTemplates">
                       <!-- grid item frame -->
-                      <a data-fancybox="gallery" href="img/project/tinyWebServer/用户登录.gif" class="art-a art-portfolio-item-frame art-horizontal">
+                      <a data-fancybox="gallery" href="img/project/cloudDisk/registe.gif" class="art-a art-portfolio-item-frame art-horizontal">
                         <!-- img -->
-                        <img src="img/project/tinyWebServer/用户登录.gif" alt="item">
+                        <img src="img/project/cloudDisk/registe.gif" alt="item">
                         <!-- zoom icon -->
                         <span class="art-item-hover"><i class="fas fa-expand"></i></span>
                       </a>
@@ -478,9 +478,23 @@
                     <!-- grid item -->
                     <div class="art-grid-item logos">
                       <!-- grid item frame -->
-                      <a data-fancybox="gallery" href="img/project/tinyWebServer/用户注册.gif" class="art-a art-portfolio-item-frame art-vertical">
+                      <a data-fancybox="gallery" href="img/project/cloudDisk/chat.gif" class="art-a art-portfolio-item-frame art-vertical">
                         <!-- img -->
-                        <img src="img/project/tinyWebServer/用户注册.gif" alt="item">
+                        <img src="img/project/cloudDisk/chat.gif" alt="item">
+                        <!-- zoom icon -->
+                        <span class="art-item-hover"><i class="fas fa-expand"></i></span>
+                      </a>
+                      <!-- grid item frame end -->
+
+                    </div>
+                    <!-- grid item end -->
+
+                    <!-- grid item -->
+                    <div class="art-grid-item logos">
+                      <!-- grid item frame -->
+                      <a data-fancybox="gallery" href="img/project/cloudDisk/login.gif" class="art-a art-portfolio-item-frame art-horizontal">
+                        <!-- img -->
+                        <img src="img/project/cloudDisk/login.gif" alt="item">
                         <!-- zoom icon -->
                         <span class="art-item-hover"><i class="fas fa-expand"></i></span>
                       </a>
@@ -492,9 +506,9 @@
                     <!-- grid item -->
                     <div class="art-grid-item drawings">
                       <!-- grid item frame -->
-                      <a data-fancybox="gallery" href="img/project/tinyWebServer/访问图片.gif" class="art-a art-portfolio-item-frame art-horizontal">
+                      <a data-fancybox="gallery" href="img/project/cloudDisk/groupChat.gif" class="art-a art-portfolio-item-frame art-horizontal">
                         <!-- img -->
-                        <img src="img/project/tinyWebServer/访问图片.gif" alt="item">
+                        <img src="img/project/cloudDisk/groupChat.gif" alt="item">
                         <!-- zoom icon -->
                         <span class="art-item-hover"><i class="fas fa-expand"></i></span>
                       </a>
@@ -506,9 +520,22 @@
 					<!-- grid item -->
                     <div class="art-grid-item drawings">
                       <!-- grid item frame -->
-                      <a data-fancybox="gallery" href="img/project/tinyWebServer/访问服务器.gif" class="art-a art-portfolio-item-frame art-horizontal">
+                      <a data-fancybox="gallery" href="img/project/cloudDisk/addFriend.gif" class="art-a art-portfolio-item-frame art-horizontal">
                         <!-- img -->
-                        <img src="img/project/tinyWebServer/访问服务器.gif" alt="item">
+                        <img src="img/project/cloudDisk/addFriend.gif" alt="item">
+                        <!-- zoom icon -->
+                        <span class="art-item-hover"><i class="fas fa-expand"></i></span>
+                      </a>
+                      <!-- grid item frame end -->
+
+                    </div>
+					
+					<!-- grid item -->
+                    <div class="art-grid-item drawings">
+                      <!-- grid item frame -->
+                      <a data-fancybox="gallery" href="img/project/cloudDisk/deleteFriend.gif" class="art-a art-portfolio-item-frame art-horizontal">
+                        <!-- img -->
+                        <img src="img/project/cloudDisk/deleteFriend.gif" alt="item">
                         <!-- zoom icon -->
                         <span class="art-item-hover"><i class="fas fa-expand"></i></span>
                       </a>
@@ -520,9 +547,93 @@
 					<!-- grid item -->
                     <div class="art-grid-item drawings">
                       <!-- grid item frame -->
-                      <a data-fancybox="gallery" href="img/project/tinyWebServer/播放视频.gif" class="art-a art-portfolio-item-frame art-horizontal">
+                      <a data-fancybox="gallery" href="img/project/cloudDisk/createDir.gif" class="art-a art-portfolio-item-frame art-horizontal">
                         <!-- img -->
-                        <img src="img/project/tinyWebServer/播放视频.gif" alt="item">
+                        <img src="img/project/cloudDisk/createDir.gif" alt="item">
+                        <!-- zoom icon -->
+                        <span class="art-item-hover"><i class="fas fa-expand"></i></span>
+                      </a>
+                      <!-- grid item frame end -->
+
+                    </div>
+                    <!-- grid item end -->
+
+					<!-- grid item -->
+                    <div class="art-grid-item drawings">
+                      <!-- grid item frame -->
+                      <a data-fancybox="gallery" href="img/project/cloudDisk/renameDir.gif" class="art-a art-portfolio-item-frame art-horizontal">
+                        <!-- img -->
+                        <img src="img/project/cloudDisk/renameDir.gif" alt="item">
+                        <!-- zoom icon -->
+                        <span class="art-item-hover"><i class="fas fa-expand"></i></span>
+                      </a>
+                      <!-- grid item frame end -->
+
+                    </div>
+                    <!-- grid item end -->
+					
+					<!-- grid item -->
+                    <div class="art-grid-item drawings">
+                      <!-- grid item frame -->
+                      <a data-fancybox="gallery" href="img/project/cloudDisk/findUser.gif" class="art-a art-portfolio-item-frame art-horizontal">
+                        <!-- img -->
+                        <img src="img/project/cloudDisk/findUser.gif" alt="item">
+                        <!-- zoom icon -->
+                        <span class="art-item-hover"><i class="fas fa-expand"></i></span>
+                      </a>
+                      <!-- grid item frame end -->
+
+                    </div>
+                    <!-- grid item end -->
+
+					<!-- grid item -->
+                    <div class="art-grid-item drawings">
+                      <!-- grid item frame -->
+                      <a data-fancybox="gallery" href="img/project/cloudDisk/uploadFile.gif" class="art-a art-portfolio-item-frame art-horizontal">
+                        <!-- img -->
+                        <img src="img/project/cloudDisk/uploadFile.gif" alt="item">
+                        <!-- zoom icon -->
+                        <span class="art-item-hover"><i class="fas fa-expand"></i></span>
+                      </a>
+                      <!-- grid item frame end -->
+
+                    </div>
+                    <!-- grid item end -->
+
+					<!-- grid item -->
+                    <div class="art-grid-item drawings">
+                      <!-- grid item frame -->
+                      <a data-fancybox="gallery" href="img/project/cloudDisk/downloadFile.gif" class="art-a art-portfolio-item-frame art-horizontal">
+                        <!-- img -->
+                        <img src="img/project/cloudDisk/downloadFile.gif" alt="item">
+                        <!-- zoom icon -->
+                        <span class="art-item-hover"><i class="fas fa-expand"></i></span>
+                      </a>
+                      <!-- grid item frame end -->
+
+                    </div>
+                    <!-- grid item end -->
+
+					<!-- grid item -->
+                    <div class="art-grid-item drawings">
+                      <!-- grid item frame -->
+                      <a data-fancybox="gallery" href="img/project/cloudDisk/shareFile.gif" class="art-a art-portfolio-item-frame art-horizontal">
+                        <!-- img -->
+                        <img src="img/project/cloudDisk/shareFile.gif" alt="item">
+                        <!-- zoom icon -->
+                        <span class="art-item-hover"><i class="fas fa-expand"></i></span>
+                      </a>
+                      <!-- grid item frame end -->
+
+                    </div>
+                    <!-- grid item end -->
+
+					<!-- grid item -->
+                    <div class="art-grid-item drawings">
+                      <!-- grid item frame -->
+                      <a data-fancybox="gallery" href="img/project/cloudDisk/moveFile.gif" class="art-a art-portfolio-item-frame art-horizontal">
+                        <!-- img -->
+                        <img src="img/project/cloudDisk/moveFile.gif" alt="item">
                         <!-- zoom icon -->
                         <span class="art-item-hover"><i class="fas fa-expand"></i></span>
                       </a>
